@@ -7,6 +7,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <style>
+        .app-card {
+          border: 1px solid #ccc;
+          border-radius: 12px;
+          padding: 16px;
+          width: 100%;
+          height: auto;
+          text-align: left;
+          background-color: white;
+          display: flex;
+          flex-direction: column;   /*设置主轴方向是水平方向*/
+          align-items: center;  /*设置侧轴上，子元素的排列方式为居中对齐*/
+          margin-top: 16px;
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+        
+        .app-icon {
+          width: 48px;
+          height: 48px;
+          border-radius: 16px;
+        }
+        
+        .app-name {
+          font-size: 24px;
+          font-weight: bold;
+          margin: 0px;
+          margin-top: 8px;
+        }
+        
+        .app-description {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 16px;
+          margin-top: 4px;
+        }
+        </style>
 </head>
 <body>
     <div class="dbl_div">
@@ -17,15 +54,32 @@
             </div>
             <div style=" justify-content: space-between; display: flex; flex-direction: row;">
                 <h4 class="dbl_daohang_text">下载</h4>
-                <h4 class="dbl_daohang_text1">帮助（暂不可用）</h4>
+                <h4 class="dbl_daohang_text1">帮助（不可用）</h4>
             </div>
             
     </div>
     <div class="btq_div">
         <p style="margin-bottom: 4px;">EX Music 4.0</p>
-        <h1 style="font-size: 64px; margin-top: 4px; margin-bottom: 0px;">全新<br><h1 style="font-size: 64px; margin-top: 0px; margin-bottom: 16px; -webkit-text-stroke: 3.5px #94DDEBFF; color: rgba(148, 221, 235, 0);">升级</h1></h1>
+        <h1 style="font-size: 64px; margin-top: 4px; margin-bottom: 0px;">全新<br><h1 style="font-size: 64px; margin-top: 0px; margin-bottom: 16px; -webkit-text-stroke: 3.5px #94DDEBFF; color: rgba(148, 221, 235, 0); text-shadow: 0px 1px 60px #94DDEBFF;">升级</h1></h1>
         <mdui-button variant="filled" style="background-color: #94DDEBFF; border-radius: 12px;"><b>立刻下载</b></mdui-button>
+        <h1></h1>
     </div>
-    
+    <div style="
+    display: flex;
+    flex-direction: row;   /*设置主轴方向是水平方向*/
+    align-items: center;  /*设置侧轴上，子元素的排列方式为居中对齐*/
+    flex-wrap:wrap;
+    ">
+        <div class="app-card">
+            <img src="https://static.codemao.cn/pickduck/r1Sg5bT_A.svg?hash=Fq_--YlFtl5HpRYIOv8feUDO-9YO" alt="App Icon" class="app-icon">
+            <h2 class="app-name">全新设计</h2>
+            <p class="app-description">EX Music 4.0 抛弃了前三代的设计风格，全新采用了 Enzyme UI 设计。与之前的 EX Music 相比更加美观</p>
+          </div>
+        <div class="app-card">
+            <img src="https://static.codemao.cn/pickduck/S14VCWTdC.svg?hash=FjVdoTuNXlWEEA_xCk6RpawU_oxU" alt="App Icon" class="app-icon">
+            <h2 class="app-name">操作简化</h2>
+            <p class="app-description">EX Music 4.0 抛弃了繁琐的操作逻辑，全新更改了操作顺序。与之前的 EX Music 相比更加简单明了。</p>
+          </div>
+    </div>
 </body>
 </html>
