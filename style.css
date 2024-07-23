@@ -1,6 +1,4 @@
-.html {
-    filter: invert(1) hue-rotate(180deg);
-}
+
 .dbl_div {
     width: 100%;
     height: auto;
@@ -35,7 +33,7 @@
 } 
 .dbl_daohang_text {
     font-weight: 900;
-    margin-left: 48px;
+    margin-left: 36px;
 }
 .dbl_daohang_text1 {
     font-weight: 900;
